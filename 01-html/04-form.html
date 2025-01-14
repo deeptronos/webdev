@@ -1,16 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Exercise 04 - Form</title>
-  </head>
-  <body>
-    <main>
-      <form action="/submit">
-        <!-- Add your code here -->
-      </form>
-    </main>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Exercise 04 - Form</title>
+    </head>
+    <body>
+        <main>
+            <h1>Form</h1>
+            <form action="/submit">
+                <!-- Add your code here -->
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required />
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Favorite Character:</legend>
+                        <input
+                            type="radio"
+                            id="bob"
+                            name="fav"
+                            value="S"
+                        /><label for="bob">Spongebob</label><br>
+                        <input
+                            type="radio"
+                            id="sandy"
+                            name="fav"
+                            value="Sandy"
+                        /><label for="sandy">Sandy</label><br>
+                        <input
+                            type="radio"
+                            id="patrick"
+                            name="fav"
+                            value="P"
+                        /><label for="patrick">Patrick</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Are you a fan of the show?</legend>
+                        <input type="checkbox" id="yes1" id="yes1" value="yes1" <label for="yes1">Yes, I have watched all episodes!</label><br>
+                        <input type="checkbox" id="yes2" id="yes2" value="yes2" <label for="yes2">Yes, it's got the best memes.</label><br>
+                    </fieldset>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </main>
+    </body>
 </html>
