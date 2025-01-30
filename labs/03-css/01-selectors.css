@@ -1,21 +1,55 @@
 /* CSS custom properties / CSS variables */
 
 :root {
-  --darkmagenta: #8b008b;
-  --magenta: #ff00ff;
-  --royalblue: #4169e1;
-  --teal: #008080;
-  --violet: #9400d3;
+    --darkmagenta: #8b008b;
+    --magenta: #ff00ff;
+    --royalblue: #4169e1;
+    --teal: #008080;
+    --violet: #9400d3;
 }
 
 /* Use attribute selectors for the first part of the exercise */
 
 li[class] {
-  color: var(--red);
+    color: var(--red);
 }
-
+li[class="dog"] {
+    color: var(--magenta);
+}
+li[id="cat"] {
+    color: var(--teal);
+}
+li[class="parrot"] {
+    color: var(--green);
+}
+li[class="donkey"] {
+    color: var(--royalblue);
+}
+li[class="hedgehog"] {
+    color: var(--magenta);
+}
+li[class="cat dog parrot"] {
+    color: var(--royalblue);
+}
 /* Use descendant, child, and sibling selectors for the second part */
 
 section li {
-  color: var(--green);
+    color: var(--green);
+}
+section li[class="first"] {
+    color: var(--green);
+}
+section li[class="second"] {
+    color: var(--darkmagenta);
+}
+section li[class="second"] {
+    color: var(--darkmagenta);
+}
+
+section li[class="second"] + li {
+    color: var(--royalblue);
+}
+
+section li[class="second"] + li + li {
+    color: var(--darkmagenta);
 }
