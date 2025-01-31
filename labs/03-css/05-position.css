@@ -1,26 +1,48 @@
 :root {
-  --darkviolet: #9400d3;
-  --maroon: #800000;
-  --darkgolden: #8f6805;
+    --darkviolet: #9400d3;
+    --maroon: #800000;
+    --darkgolden: #8f6805;
 }
 
 .box {
-  padding: 10px;
-  color: var(--white);
+    padding: 10px;
+    color: var(--white);
 }
-
+/* static and relative are hacky, sorry :P */
 .static {
-  background-color: var(--darkviolet);
+    background-color: var(--darkviolet);
+    position: static;
+    height: 400px;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 4px solid var(--white);
 }
 
 .relative {
-  background-color: var(--purple);
+    background-color: var(--purple);
+    position: relative;
+    height: 400px;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 4px solid var(--white);
+}
+.main {
+    padding-top: 80px;
+    display: flex;
 }
 
 .absolute {
-  background-color: var(--maroon);
+    background-color: var(--maroon);
+    position: absolute;
+    width: 100%;
+    height: 70px;
 }
 
 .fixed {
-  background-color: var(--darkgolden);
+    background-color: var(--darkgolden);
+    position: fixed;
+    width: 100%;
+    height: 70px;
 }
