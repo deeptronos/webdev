@@ -1,6 +1,128 @@
 @media (min-width: 1024px) {
-  body {
-    background: var(--green);
-    color: var(--white);
-  }
+    body {
+        background: var(--green);
+        color: var(--white);
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        padding: 0;
+        margin: 0;
+    }
+    menu,
+    ul {
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+
+        /* align-items: center; */
+
+        /* justify-content: space-around; */
+        align-content: center;
+    }
+    li {
+        flex-grow: 1;
+        background: var(--black);
+        color: var(--white);
+        padding: 1em;
+    }
+    a {
+        padding: 1em;
+        /* padding-top: 5em; */
+        width: 100%;
+        color: var(--white);
+        text-decoration: none;
+    }
+    .main {
+        padding: 1em;
+    }
+}
+
+@media (min-width: 512px) and (max-width: 1024px) {
+    body {
+        background: var(--orange);
+        color: var(--black);
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        padding: 0;
+        margin: 0;
+    }
+    menu,
+    ul {
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+
+        /* align-items: center; */
+
+        /* justify-content: space-around; */
+        align-content: center;
+    }
+    li {
+        flex-grow: 1;
+        background: var(--black);
+        color: var(--white);
+        padding: 1em;
+    }
+    a {
+        padding: 1em;
+        /* padding-top: 5em; */
+        width: 100%;
+        color: var(--white);
+        text-decoration: none;
+    }
+    .main {
+        padding: 1em;
+    }
+}
+
+@media (max-width: 512px) {
+    body {
+        background: var(--purple);
+        color: var(--white);
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        padding: 0;
+        margin: 0;
+    }
+    menu,
+    ul {
+        margin: 0;
+        /* display: flex;
+        flex-flow: row wrap; */
+        list-style: none;
+        padding: 0;
+        width: 100%;
+
+        /* align-items: center; */
+
+        /* justify-content: space-around; */
+        align-content: center;
+    }
+    li {
+        flex-grow: 1;
+        background: var(--black);
+        color: var(--white);
+        padding: 1em;
+    }
+    a {
+        padding: 0.5em;
+        /* padding-top: 5em; */
+        width: 100%;
+        color: var(--white);
+        text-decoration: none;
+    }
+    .main {
+        padding: 1em;
+    }
 }
