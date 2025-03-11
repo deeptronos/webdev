@@ -1,24 +1,88 @@
+.grid-item {
+    text-align: left;
+}
+
 .header {
-  grid-area: header;
+    grid-area: header;
 }
 
 .article {
-  grid-area: article;
+    grid-area: article;
+}
+.section {
+    grid-area: section;
+}
+.aside {
+    grid-area: aside;
+}
+.footer {
+    grid-area: footer;
 }
 
 .grid-container {
-  display: grid;
-  height: 97vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 1fr);
-  gap: 10px;
-  grid-template-areas:
-    'header'
-    'article'
-    'article'
-    'section'
-    'section'
-    'section'
-    'aside'
-    'footer';
+    display: grid;
+    height: 97vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px;
+    grid-template-areas:
+        "header"
+        "article"
+        "article"
+        "section"
+        "section"
+        "section"
+        "aside"
+        "footer";
+}
+
+.container-one {
+    display: grid;
+    grid-template:
+        "header header header"
+        "aside article article"
+        "aside article article"
+        "aside article article"
+        "aside article article"
+        "aside article article"
+        "aside article article"
+        "section section section"
+        "section section section"
+        "section section section"
+        "footer footer footer";
+}
+
+.container-two {
+    max-width: 60vw;
+    display: grid;
+    grid-template:
+        "header header header header"
+        "article article article aside"
+        "article article article aside"
+        "article article article aside"
+        "article article article aside"
+        "article article article aside"
+        "section section section section"
+        "section section section section"
+        "section section section section"
+        "footer footer footer footer";
+}
+
+.container-three {
+    display: grid;
+    max-width: 25vw;
+    grid-template:
+        "header"
+        "article"
+        "article"
+        "article"
+        "article"
+        "article"
+        "section"
+        "section"
+        "section"
+        "section"
+        "section"
+        "aside"
+        "footer";
 }
